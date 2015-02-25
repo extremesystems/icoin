@@ -70,7 +70,6 @@ script: |
   done
 
   # Create the release tarball using (arbitrarily) the first host
-  ./autogen.sh
   ./configure --prefix=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`
   make dist
   SOURCEDIST=`echo icoin-*.tar.gz`
