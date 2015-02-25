@@ -70,8 +70,9 @@ script: |
   done
 
   # Create the release tarball using (arbitrarily) the first host
-  ./configure --prefix=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`
-  make dist
+  #./configure --prefix=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`
+  cd src
+  make -f makefile.unix
   SOURCEDIST=`echo icoin-*.tar.gz`
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
   # Correct tar file order
