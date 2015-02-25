@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #
 # Copyright (c) 2011 The Bitcoin developers
+# Copyright (c) 2013-2015 The iCoin Developers
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #
@@ -217,7 +218,7 @@ if __name__ == '__main__':
 	if 'host' not in settings:
 		settings['host'] = '127.0.0.1'
 	if 'port' not in settings:
-		settings['port'] = 9332
+		settings['port'] = 9888
 	if 'threads' not in settings:
 		settings['threads'] = 1
 	if 'hashmeter' not in settings:
